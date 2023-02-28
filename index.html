@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Custom fontawesome cdn file link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1><span class="fas fa-book-open"></span> To Do List</h1>
+
+        <form action="">
+            <label for="title">
+                Title <br>
+                <input type="text" placeholder="enter your title..." id="title">
+            </label><br><br>
+            <label for="author">
+                Author <br>
+                <input type="text" placeholder="enter your author..." id="author">
+            </label><br><br>
+            <label for="year">
+                Year <br>
+                <input type="number" placeholder="enter your year..." id="year">
+            </label>
+            <button class="btn">Add Book</button>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <!-- Custom JS file link -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
